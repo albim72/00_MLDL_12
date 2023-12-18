@@ -25,3 +25,22 @@ print(nbparz)
 
 cube = list(map(lambda x:x**3,num))
 print(cube)
+
+kwadraty = [i**2 for i in range(5,50,5)] #list comprehension
+print(kwadraty)
+
+#funkcja wyższego rzędu
+
+import bfunkcje
+from bfunkcje import konkurs,bonus
+
+def witaj(imie):
+    return f'Miło Cię widzieć {imie}'
+
+
+def osoba(funkcja,*args):
+    return funkcja(*args)
+
+print(osoba(witaj,"Leon"))
+print(osoba(konkurs,"Jan",67,12))
+print(osoba(bonus,33,14))
